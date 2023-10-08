@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <section
     id="home"
-    className="overflow-hidden mt-12"
+    className="overflow-hidden mt-10 ="
     >
       <Container>
         <div className='relative z-10 max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 flex'>
           {/* Right side */}
-          <div className='relative z-10 max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 w-2/3'>
-            <Title title='Make Your Own Website and Mobile Application With Nodewave' className="text-5xl" />
+          <div className='relative z-10 max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 xl:w-2/3 lg:w-2/3 sm:w-full'>
+            <Title isHero title='Make Your Own Website and Mobile Application With Nodewave' className="text-5xl" />
             <div className='mt-6 ml-2'>
               <Button href="#" variant="solid" className="rounded-full">
                 Make an App
