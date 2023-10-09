@@ -26,12 +26,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.slider {
+	overflow: hidden;
+}
+
 .slider .slide-track {
 	-webkit-animation: scroll 30s linear infinite;
 	animation: scroll 30s linear infinite;
 	display: flex;
 	width: calc(250px * 14);
 }
+
 
 @-webkit-keyframes scroll {
 	0% {
