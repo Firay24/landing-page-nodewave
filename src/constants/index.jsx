@@ -14,6 +14,11 @@ import iconF from '@/images/icons/icons-f.png'
 import product1 from '@/images/product1.png'
 import product2 from '@/images/product2.png'
 import saleIcon from '@/images/icons/sale.png'
+import instagram from '@/images/icons/ig.png'
+import linkdln from '@/images/icons/linkdln.png'
+import twitter from '@/images/icons/twitter.png'
+import youtube from '@/images/icons/youtube.png'
+import facebook from '@/images/icons/fb.png'
 
 export const navData = [
   { _id: 1, title: "Website", href: "#website"},
@@ -142,4 +147,8 @@ export const priceData = [
     price: "Rp, 999.000",
     img: product2,
   }
+]
+
+export const iconSosmed = [
+  facebook, twitter, youtube, linkdln, instagram,
 ]
