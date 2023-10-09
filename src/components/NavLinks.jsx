@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react'
-import { navData } from '@/constants/indes'
+import { navData } from '@/constants'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 

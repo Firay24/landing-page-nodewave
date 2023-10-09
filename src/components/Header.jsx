@@ -9,7 +9,7 @@ import { TbMenu2 } from "react-icons/tb";
 import { IoIosArrowUp } from "react-icons/io";
 import Link from "next/link"
 import { AnimatePresence, motion } from 'framer-motion';
-import { navData } from '@/constants/indes';
+import { navData } from '@/constants';
 
 const MobileNavLink = ({ children, ...props }) => {
   return (

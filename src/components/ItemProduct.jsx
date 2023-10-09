@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react'
 import clsx from 'clsx';
 import Image from 'next/image';
-import MobileIcon from '@/images/icons/mobile.png'
 import { BsArrowRight } from "react-icons/bs";
 
 const baseStyle = {
@@ -24,7 +23,7 @@ const variantStyles = {
 };
 
 const ItemProduct = forwardRef(function ItemProduct(
-  { variant = "solid", color = "gray", className, ...props }, ref
+  { variant = "solid", color = "gray", className, title, desc, path, ...props }, ref
 ) {
   className = clsx(
     baseStyle[variant],
@@ -34,11 +33,11 @@ const ItemProduct = forwardRef(function ItemProduct(
 
   return (
     <div ref={ref} className={`xl:flex lg:flex xl:items-center lg:items-center gap-x-6 ${className}`} {...props}>
-      <Image src={MobileIcon} alt='icon mobile' className='h-[60px] w-[60px] mx-auto'  />
+      <Image src={path} alt='icon mobile' className='h-[60px] w-[60px] mx-auto'  />
       <div className='xl:flex lg:flex text-center xl:text-left lg:text-left mt-3 xl:mt-0 lg:mt-0'>
         <div className='flex flex-col gap-y-2'>
-          <h4 className='font-medium text-base'>Mobile Aps</h4>
-          <p className='font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h4 className='font-medium text-base'>{title}</h4>
+          <p className='font-normal'>{desc}</p>
         </div>
         <div className="flex items-end justify-center xl:justify-start lg:justify-start mt-3 xl:mt-0 lg:mt-0">
           <BsArrowRight />

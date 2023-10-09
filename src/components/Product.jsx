@@ -5,6 +5,8 @@ import Image from 'next/image'
 import MobileImg from '@/images/mobiles.png'
 import Button from './Button'
 import ItemProduct from './ItemProduct'
+import MobileIcon from '@/images/icons/mobile.png'
+import WebIcon from '@/images/icons/web.png'
 
 const Mobile = () => {
   return (
@@ -34,16 +36,30 @@ const Product = () => {
         aria-label="Features for building a portfolio"
         className="py-20 sm:py-32"
       >
-        <div className=" mx-auto max-w-2xl sm:text-center">
+        <div className="mx-auto max-w-2xl sm:text-center">
           <Title 
             title="Our Product"
-            className="text-2xl text-center"
+            className="text-2xl text-center font-bold"
           />
         </div>
         <div className='grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 px-16 xl:px-24 lg:px-24 gap-5 mt-8'>
           <div className='flex flex-col items-center gap-5'>
-            <ItemProduct variant="solid" color="white" className="rounded-3xl" />
-            <ItemProduct variant="outline" color="white" className="rounded-3xl max-w-sm mx-auto" />
+            <ItemProduct 
+              variant="solid" 
+              color="white" 
+              className="rounded-3xl"
+              title="Mobile App"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              path={MobileIcon}
+            />
+            <ItemProduct 
+              variant="outline" 
+              color="white" 
+              className="rounded-3xl max-w-sm mx-auto"
+              title="Website"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              path={WebIcon}
+            />
           </div>
           <div className='h-full'>
             <Mobile />
