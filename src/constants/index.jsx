@@ -5,6 +5,12 @@ import thumnail2 from '@/images/Thumnail5.png'
 import icon1 from '@/images/icons/icon-1.png'
 import icon2 from '@/images/icons/icon-2.png'
 import icon3 from '@/images/icons/icon-3.png'
+import iconA from '@/images/icons/icons-a.png'
+import iconB from '@/images/icons/icons-b.png'
+import iconC from '@/images/icons/icons-c.png'
+import iconD from '@/images/icons/icons-d.png'
+import iconE from '@/images/icons/icons-e.png'
+import iconF from '@/images/icons/icons-f.png'
 
 export const navData = [
   { _id: 1, title: "Website", href: "#website"},
@@ -88,5 +94,32 @@ export const featuresData = [
       "Aplikasi khusus untuk tim",
       "Promosi dan Kode voucher khusus"
     ]
+  },
+]
+
+export const serviceData = [
+  {
+    title: 'E-commerce',
+    icons: iconA
+  },
+  {
+    title: 'Company Profile',
+    icons: iconB
+  },
+  {
+    title: 'Cashier',
+    icons: iconC
+  },
+  {
+    title: 'Chat',
+    icons: iconD
+  },
+  {
+    title: 'Workshop',
+    icons: iconE
+  },
+  {
+    title: 'Construction',
+    icons: iconF
   },
 ]

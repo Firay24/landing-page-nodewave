@@ -1,8 +1,9 @@
 import React from 'react'
 import Title from './Title'
 import Container from './Container'
-import { featuresData } from '@/constants'
+import { featuresData, serviceData } from '@/constants'
 import ItemFetures from './ItemFetures'
+import Image from 'next/image'
 
 const Feature = () => {
   return (
@@ -24,6 +25,19 @@ const Feature = () => {
               <ItemFetures key={index} {...feature} />
             ))
           }
+        </div>
+        <div className='flex flex-wrap gap-3 justify-center mt-8'>
+          {
+            serviceData.map((service, index) => (
+              <div key={index} className='flex items-center gap-x-1'>
+                <Image src={service.icons} alt={`icons ${service.title}`} />
+                <p className='text-xl font-semibold'>{service.title}</p>
+              </div>
+            ))
+          }
+          <div className='flex items-center'>
+            <p className='text-xl font-semibold'>and many others</p>
+          </div>
         </div>
       </Container>
     </section>
