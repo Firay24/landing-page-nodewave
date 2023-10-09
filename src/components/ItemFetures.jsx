@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ItemFetures = ({ className, icons, title, body, points }) => {
   return (
-    <div className={className}>
+    <div className={`md:w-1/2 lg:w-1/4 ${className}`}>
       <div className='flex gap-x-2 items-center'>
         <Image src={icons} alt='icon features' className='w-8 h-8' />
         <h4 className='text-xl font-semibold'>{title}</h4>

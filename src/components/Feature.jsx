@@ -18,7 +18,7 @@ const Feature = () => {
             className="text-2xl text-center font-bold"
           />
         </div>
-        <div className='flex gap-x-8 mt-8'>
+        <div className='flex flex-wrap gap-8 justify-center mt-8'>
           {
             featuresData.map((feature, index) => (
               <ItemFetures key={index} {...feature} />
