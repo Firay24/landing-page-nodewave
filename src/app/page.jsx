@@ -4,6 +4,7 @@ import Testimoni from '@/components/Testimoni'
 import Work from '@/components/Work'
 import HowWork from '@/components/HowWork'
 import Feature from '@/components/Feature'
+import Prices from '@/components/Prices'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Work />
       <HowWork />
       <Feature />
+      <Prices />
     </main>
   )
 }

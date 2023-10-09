@@ -11,6 +11,9 @@ import iconC from '@/images/icons/icons-c.png'
 import iconD from '@/images/icons/icons-d.png'
 import iconE from '@/images/icons/icons-e.png'
 import iconF from '@/images/icons/icons-f.png'
+import product1 from '@/images/product1.png'
+import product2 from '@/images/product2.png'
+import saleIcon from '@/images/icons/sale.png'
 
 export const navData = [
   { _id: 1, title: "Website", href: "#website"},
@@ -122,4 +125,21 @@ export const serviceData = [
     title: 'Construction',
     icons: iconF
   },
+]
+
+export const priceData = [
+  {
+    title: "Website",
+    isDiscount: true,
+    before: "Rp, 1.000.000",
+    after: "Rp, 500.000",
+    img: product1,
+    icons: saleIcon
+  },
+  {
+    title: "Mobile Apps",
+    isDiscount: false,
+    price: "Rp, 999.000",
+    img: product2,
+  }
 ]
