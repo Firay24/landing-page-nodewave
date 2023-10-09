@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemTestimoni from './ItemTestimoni'
-import Container from './Container'
-import Title from './Title'
+import Container from '../shared/Container'
+import Title from '../shared/Title'
 import { testimoniData } from '@/constants'
 
 const Testimoni = () => {

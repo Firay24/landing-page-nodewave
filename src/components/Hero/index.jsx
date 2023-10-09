@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import Container from './Container'
-import Title from './Title'
-import Button from './Button'
+import Container from '../shared/Container'
+import Title from '../shared/Title'
+import Button from '../shared/Button'
 import Image from 'next/image'
 import BgImage from '@/images/background.png'
 

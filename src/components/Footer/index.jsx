@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import Container from './Container'
+import Container from '../shared/Container'
 import Image from 'next/image'
 import Logo from '@/images/logo/logo.png'
 import { iconSosmed } from '@/constants'

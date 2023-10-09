@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemWork from './ItemWork'
-import Container from './Container'
-import Title from './Title'
+import Container from '../shared/Container'
+import Title from '../shared/Title'
 import { workData } from '@/constants'
 
 const Work = () => {

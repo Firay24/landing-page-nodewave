@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import Container from './Container'
+import Container from '../shared/Container'
 import Image from 'next/image'
 import bgContent from '@/images/Rectangle39.png'
-import Title from './Title'
+import Title from '../shared/Title'
 import chatImg from '@/images/chat.png'
 import bgSection from '@/images/bgContent.png'
 

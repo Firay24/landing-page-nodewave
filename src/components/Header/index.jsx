@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import Container from './Container'
+import Container from '../shared/Container'
 import Logo from './Logo'
 import NavLinks from './NavLinks'
-import Button from './Button';
+import Button from '../shared/Button';
 import { Popover } from '@headlessui/react'
 import { TbMenu2 } from "react-icons/tb";
 import { IoIosArrowUp } from "react-icons/io";
@@ -34,7 +34,6 @@ const Header = () => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll);
 
-      // Clean up the scroll event listener when the component unmounts
       return () => window.removeEventListener("scroll", handleScroll);
     }
   }, []);

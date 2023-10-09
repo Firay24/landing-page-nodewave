@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from './Button'
+import Button from '../shared/Button'
 
 const ItemPrice = ({ className, img, title, isDiscount, before, after, price, icons }) => {
   return (

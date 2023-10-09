@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from './Title'
-import Container from './Container'
+import Title from '../shared/Title'
+import Container from '../shared/Container'
 import { featuresData, serviceData } from '@/constants'
 import ItemFetures from './ItemFetures'
 import Image from 'next/image'
